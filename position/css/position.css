@@ -1,0 +1,83 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+main {
+    /* width: 1400px; */
+    height: 1200px;
+}
+.conteneur {
+    margin: 100px;
+    height: 100%;
+    border: 1px solid black;
+}
+.triangle {
+    width: 0;
+    height: 0;
+    border-top: 120px solid rgb(234, 0, 255);
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    position: sticky;
+    top: 0px;
+    left: calc(50% - 60px);
+    z-index: 10;
+    /* line-clamp: 50%; */
+}
+.rond {
+    width: 100px;
+    height: 100px;
+    background: rgb(0, 255, 242);
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+    z-index: 5;
+}
+.ombre {
+    width: 100px;
+    height: 100px;
+    background: rgb(181, 196, 195);
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    position: relative;
+    top: calc(13% - 50px);
+    left: calc(50% - 50px);
+}
+ 
+main > div:first-child {
+    background-color: rgb(255, 0, 0);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+main > div:nth-child(2) {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+}
+main > div:nth-child(4) {
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+}
+main > div:last-child {
+    background-color: rgb(255, 208, 0);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+ 
