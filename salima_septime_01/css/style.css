@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Kufam&family=PT+Sans&family=Shadows+Into+Light&family=Shadows+Into+Light+Two&display=swap');
+
+ /* Import de la police Cormorant Garamond de google font avec différentes graisses */
+ *{ 
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Cormorant Garamond',cursive; /* on définit la police Cormorant qu'on à importé comme la police de base du document */
+   box-sizing: border-box;
+}
+#container{
+    width: 1024px;
+    margin: auto;
+    background-color: #f6f6f7;
+    
+}
+img{
+    display: block;
+    width: 100%;
+
+}
+header{
+    /* display: block; */
+}
+.text1{
+    color: red;
+    font-size:10px;
+    letter-spacing: 0.5rem;
+}
+h2{
+    letter-spacing: 0.5rem;
+  }  
+    
+ .logo{
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+  
+}
+nav ul li a{
+    color: black;
+    display: inline; 
+    list-style: none; 
+    margin:auto ; 
+    text-decoration: none;}
+nav ul li{
+        display: inline; 
+        list-style: none; 
+        margin: auto; 
+}
+.text2{
+    /* text-transform: uppercase; */
+   line-height: 20px;
+   border-bottom:  double ;
+    border-top: double;
+    letter-spacing: 0.5rem;
+    padding: 10px;
+
+    
+    
+}
+.h3{
+    font-style: italic;
+    border-bottom: black 3px;
+}
+.plat{
+
+    align-items: center;
+    text-align: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.imgplat{
+    display: flex;
+    justify-content: space-evenly; 
+}
+
+
+main{
+    background-color: #f6f6f7;
+
+    
+}
+article{
+    display: flex;
+    justify-content: space-evenly; 
+    text-justify: auto;
+  
+    
+}
+article section{
+    width:50%;
+}
+.text{align-items: center;
+    
+    padding:100px 50px;}
+.pargraph{
+    border-top: solid 1px;
+    text-justify: justify;
+
+    font-weight: bold 10px;
+    font-style: italic;
+
+}
+footer {
+    /* text-align: center;
+    line-height: 20px;
+   border-bottom:  double ;
+    border-top: double;
+    letter-spacing: 0.5rem;
+    padding: 10px; */
+   
+}
+.plan{
+    background: url("../img/plan.png") no-repeat center;
+width: 153px;
+height: 123px;
+padding: 45px 10px;
+    margin: 40px 432px 14px 432px;
+    text-align: center;
+    text-decoration: underline grey;
+    
+}
+
+  
+.rating  {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color .4s;
+    font-weight: bold;
+    border: solid 1px black;
+    width: 200px;
+    background-color: black;
+}
+.rating a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color .4s;
+    font-weight: bold;
+ }
+ .rating a:hover,
+ .rating a:focus {
+    color: orange;
+    cursor: pointer;
+ }
+ @media screen and (max-width: 650px){
+    nav{
+        margin-right: 1em;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+
+    }
+    nav ul li a{
+        line-height: 150%;
+        font-size: 1rem;
+        line-height: 30px;
+    }
+    section{
+        width: 100%; /* chaque section prend la moitier de l'article */
+    }
+}
